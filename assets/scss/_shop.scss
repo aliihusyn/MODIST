@@ -1,1 +1,179 @@
 // Ali Huseynov
+.shop {
+  padding-top: 73px;
+  // Background style
+  .bg {
+    background-image: url(../images/shop-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 303px;
+    // Start Container
+    .container {
+      padding: 7em 0;
+      .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // Container Content
+        .content {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            font-weight: 100;
+            color: #000000;
+            font-size: 40px;
+            font-family: "Lato", Arial, sans-serif;
+            letter-spacing: 3px;
+            line-height: 1.5;
+          }
+          .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: baseline;
+            .home {
+              margin-right: 0.5rem !important;
+              a {
+                color: #000000;
+                font-size: 13px;
+                letter-spacing: 1px;
+              }
+            }
+            .span-product {
+              // padding-top: 2px;
+              color: rgba(0, 0, 0, 0.7);
+              text-transform: uppercase;
+              font-size: 13px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-section {
+    padding: 9em 0;
+    background: #f8f9fa;
+    .cards {
+      padding: 0 4em;
+      margin: 0 auto;
+      // position: relative;
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .product {
+          overflow: hidden;
+          // background: #fff;
+          margin: 0 15px;
+          margin-bottom: 30px;
+          a {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+
+            img {
+              max-width: 317px;
+              height: 476px;
+              transform: scale(1);
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+            .discount {
+              position: absolute;
+              top: 10px;
+              left: -1px;
+              padding: 2px 15px;
+              color: #000000;
+              font-weight: 300;
+              background: #f1b8c4;
+            }
+          }
+          .product-content {
+            background: #fff;
+            padding: 1rem;
+            h3 {
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 1.5;
+              font-family: inherit;
+              margin-bottom: 0.5rem;
+              a {
+                color: #000;
+              }
+            }
+            .valuate {
+              display: flex;
+              justify-content: space-between;
+              .pricing {
+                .remove-price {
+                  text-decoration: line-through;
+                  color: #b3b3b3;
+                }
+              }
+            }
+          }
+          hr {
+            margin: 1rem auto;
+            padding: 0 5px;
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            width: 100%;
+          }
+          .add-to-cart {
+            margin-bottom: 10px;
+            a {
+              font-size: 13px;
+              color: #000000;
+              text-transform: uppercase;
+              font-weight: 300;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+    .slider {
+      margin-top: 3rem;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .row-list {
+        li {
+          text-align: center;
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          border: 1px solid #f1b8c4;
+          cursor: pointer;
+          &:hover {
+            background: #f1b8c4;
+            a {
+              color: #fff;
+            }
+          }
+          a {
+            color: #f1b8c4;
+          }
+        }
+        .active {
+          background: #f1b8c4;
+          color: #fff;
+          border: 1px solid transparent;
+        }
+      }
+    }
+  }
+}
+

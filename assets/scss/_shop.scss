@@ -33,7 +33,7 @@
             justify-content: center;
             align-items: center;
             justify-items: baseline;
-            .home {
+            .span-home {
               margin-right: 0.5rem !important;
               a {
                 color: #000000;
@@ -78,7 +78,7 @@
 
             img {
               max-width: 317px;
-              height: 476px;
+              max-height: 476px;
               transform: scale(1);
               transition: all 0.3s ease-in-out;
               &:hover {
@@ -117,6 +117,20 @@
                   color: #b3b3b3;
                 }
               }
+              .rating {
+                .stars {
+                  display: flex;
+                  a {
+                    i {
+                      font-weight: 400;
+                      color: gray;
+                      &:hover {
+                        color: orange;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
           hr {
@@ -135,6 +149,11 @@
               font-weight: 300;
               display: flex;
               justify-content: space-between;
+              i {
+                &:hover {
+                  color: red;
+                }
+              }
             }
           }
         }
@@ -176,4 +195,3 @@
     }
   }
 }
-

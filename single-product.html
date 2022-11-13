@@ -1,14 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/scss/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
     <title>MODIST</title>
-</head>
-<body>
-    <p>Ali Huseynov</p>
-    <p>okay</p>
-</body>
+  </head>
+  <body>
+    <!-- ---------------------------- Ali Huseynov ----------------------------- -->
+    <!-- ---------------------------- Header Start ----------------------------- -->
+    <header class="header header-white">
+      <div class="container">
+        <nav class="navBar">
+          <div class="logo">
+            <a href="./home.html"> MODIST </a>
+          </div>
+          <ul class="navList">
+            <li class="navItem">
+              <a class="navLink active" href="./home.html">Home</a>
+            </li>
+            <li class="navItem">
+              <a class="navLink" href="#">
+                Shop
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="dropList">
+                <li class="dropItem">
+                  <a class="dropLink" href="./shop.html"> Shop </a>
+                </li>
+                <li class="dropItem">
+                  <a class="dropLink" href="./single-product.html">
+                    Single Product
+                  </a>
+                </li>
+                <li class="dropItem">
+                  <a class="dropLink" href="./cart.html"> Cart </a>
+                </li>
+                <li class="dropItem">
+                  <a class="dropLink" href="./checkout.html"> Checkout </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navItem">
+              <a class="navLink" href="./about.html">About</a>
+            </li>
+            <li class="navItem">
+              <a class="navLink" href="./blog.html">Blog</a>
+            </li>
+            <li class="navItem">
+              <a class="navLink" href="./contact.html">Contact</a>
+            </li>
+            <li class="navItem">
+              <a class="navLink" href="./cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>[0]
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ----------------------------- Header End ------------------------------ -->
+    <!-- ------------------------- Main Section Start -------------------------- -->
+    <main>
+      <!-- Single Product Section Start -->
+      <section class="single-product">
+        <div class="bg">
+          <div class="container">
+            <div class="content-container">
+              <div class="content">
+                <h2>Product single</h2>
+                <p class="title">
+                  <span class="home">
+                    <a href="./home.html">HOME</a>
+                  </span>
+                  <span class="span-product">
+                    <a href="./shop.html">PRODUCT</a>
+                  </span>
+                  <span class="span-ps">Product Single</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="container">
+            <div class="product">
+              <div class="img">
+                <a href="#">
+                  <img src="./assets/images/product-1.jpg.webp" alt="" />
+                </a>
+              </div>
+              <div class="text">
+                <h3>Young Woman Wearing Dress</h3>
+                <p class="price">
+                  <span>$120.00</span>
+                </p>
+                <p class="text-content">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+                <p class="text-content">
+                  On her way she met a copy. The copy warned the Little Blind
+                  Text, that where it came from it would have been rewritten a
+                  thousand times and everything that was left from its origin
+                  would be the word "and" and the Little Blind Text should turn
+                  around and return to its own, safe country. But nothing the
+                  copy said could convince her and so it didn't take long until
+                  a few insidious Copy Writers ambushed her, made her drunk with
+                  Longe and Parole and dragged her into their agency, where they
+                  abused her for their.
+                </p>
+                <div class="size-section">
+                  <div class="select-section">
+                    <select name="" id="" class="select-size">
+                      <option value="#">Small</option>
+                      <option value="#">Medium</option>
+                      <option value="#">Large</option>
+                      <option value="#">Extra Large</option>
+                    </select>
+                  </div>
+                  <div class="product-quantity">
+                    <span class="change">
+                      <button class="btn">-</button>
+                    </span>
+                    <input class="quantity" type="text" value="1" min="1" max="100"/>
+                    <span class="change plus">
+                      <button class="btn">+</button>
+                    </span>
+                  </div>
+                  <div class="add-button">
+                    <button class="add-btn">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

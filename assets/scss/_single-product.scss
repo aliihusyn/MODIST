@@ -1,1 +1,203 @@
 // Ali Huseynov
+.single-product {
+  padding-top: 73px;
+  // Background style
+  .bg {
+    background-image: url(../images/shop-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 303px;
+    // Start Container
+    .container {
+      padding: 7em 0;
+      .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // Container Content
+        .content {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            font-weight: 100;
+            color: #000000;
+            font-size: 40px;
+            font-family: "Lato", Arial, sans-serif;
+            letter-spacing: 3px;
+            line-height: 1.5;
+          }
+          .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: baseline;
+            .home {
+              margin-right: 0.5rem;
+              a {
+                color: #000000;
+                font-size: 13px;
+                letter-spacing: 1px;
+              }
+            }
+            .span-product {
+              margin-right: 0.5rem;
+              a {
+                color: #000000;
+                font-size: 13px;
+                letter-spacing: 1px;
+              }
+            }
+            .span-ps {
+              color: rgba(0, 0, 0, 0.7);
+              text-transform: uppercase;
+              font-size: 13px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .product-info {
+    padding: 9em 0;
+    background: #f8f9fa;
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      .product {
+        display: flex;
+        // flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .img {
+          padding: 0 15px;
+          a {
+            img {
+              width: 540px;
+              height: 810px;
+            }
+          }
+        }
+        .text {
+          padding: 0 3rem 15px;
+          h3 {
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #000000;
+            margin-bottom: 0.5rem;
+            font-family: inherit;
+          }
+          .price {
+            margin-bottom: 1rem;
+            span {
+              font-size: 30px;
+              color: #000;
+            }
+          }
+          .text-content {
+            margin-bottom: 1rem;
+            font-family: "Lato", Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: gray;
+          }
+          .above {
+            font-family: "Lato", Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+            font-weight: 400;
+          }
+          .size-section {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-top: 1.5rem;
+
+            .select-section {
+              width: 100%;
+              padding-right: 15px;
+              padding-left: 15px;
+              .select-size {
+                font-size: 13px;
+                // appearance: none;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                height: 54px;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                color: #000;
+                padding: 10px 20px;
+                background: transparent;
+                margin-bottom: 1rem;
+                option {
+                }
+              }
+            }
+          }
+        }
+        .product-quantity {
+          padding:0 15px;
+          margin-bottom: 1rem;
+          .change {
+            margin-right: 0.5rem;
+            .btn {
+              height: 54px;
+              text-align: center;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              color: #000;
+              background: transparent;
+              border-radius: 0;
+              font-size: 14px;
+              cursor: pointer;
+              padding: 16px 20px;
+            }
+          }
+          .plus{
+            margin-left: 0.5rem;
+          }
+          .quantity {
+            height: 54px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            background: transparent;
+            font-size: 14px;
+            line-height: 1.5;
+            width: 124px;
+          }
+        }
+        .add-button {
+          margin-bottom: 1rem;
+          padding:0 15px;
+          .add-btn {
+            background: #f1b8c4;
+            border: 1px solid #f1b8c4;
+            color: #fff;
+            padding: 1rem 3rem;
+            border-radius: 30px;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1rem;
+            line-height: 1.5;
+            cursor: pointer;
+            transition: 1 ease-in-out;
+
+            &:hover{
+              background-color: #fff;
+              color: #f1b8c4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
